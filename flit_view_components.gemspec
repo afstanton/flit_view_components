@@ -5,21 +5,26 @@ Gem::Specification.new do |spec|
   spec.version     = FlitViewComponents::VERSION
   spec.authors     = ["Aaron F Stanton"]
   spec.email       = ["afstanton@gmail.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of FlitViewComponents."
-  spec.description = "TODO: Description of FlitViewComponents."
-    spec.license     = "MIT"
-  
+  spec.homepage    = "https://github.com/afstanton/flit_view_components"
+  spec.summary     = "View Components based on Flutter widgets."
+  spec.license     = "MIT"
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  if spec.respond_to?(:metadata)
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
+    spec.metadata["homepage_uri"] = spec.homepage
+    spec.metadata["source_code_uri"] = "https://github.com/afstanton/flit_view_components"
+    spec.metadata["changelog_uri"] = "https://github.com/afstanton/flit_view_components/blob/main/docs/CHANGELOG.md"
+  else
+    raise "RubyGems 2.0 or newer is required to protect against " \
+    "public gem pushes."
+  end
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+    Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "docs/CHANGELOG.md"]
   end
 
   spec.add_dependency "rails", ">= 7.0.4.2"

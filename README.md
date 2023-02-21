@@ -1,5 +1,7 @@
 # FlitViewComponents
-Short description and motivation.
+This is a set of Rails View Components aimed at mimicking Flutter's Widgets. I'm new to Flutter, and not much of a designer, so I'm attempting to do this via tools I am familiar with.
+
+I need a flexible design tool, and I plan on using [json_dynamic_widget](https://pub.dev/packages/json_dynamic_widget) once I know what I'm doing with Flutter. First, though, I need static widgets.
 
 ## Usage
 How to use my plugin.
