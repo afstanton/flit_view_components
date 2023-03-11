@@ -24,11 +24,11 @@ Gem::Specification.new do |spec|
     "public gem pushes."
   end
 
-
-
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "docs/CHANGELOG.md"]
   end
 
-  spec.add_dependency "rails", ">= 7.0.4.2"
+  spec.add_runtime_dependency "view_component", "~> 3.0.0rc3"
+
+  spec.add_development_dependency "rspec-rails"
 end
