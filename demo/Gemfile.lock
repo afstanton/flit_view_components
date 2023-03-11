@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    flit_view_components (0.0.1)
+    flit_view_components (0.0.2)
       view_component (~> 3.0.0rc3)
 
 GEM
@@ -75,8 +75,6 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     bindex (0.8.1)
-    bootsnap (1.16.0)
-      msgpack (~> 1.2)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
@@ -125,7 +123,6 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.0)
-    msgpack (1.6.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -235,7 +232,6 @@ PLATFORMS
 
 DEPENDENCIES
   actioncable
-  bootsnap
   debug
   flit_view_components!
   importmap-rails
