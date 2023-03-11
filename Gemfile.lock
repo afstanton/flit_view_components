@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    flit_view_components (0.0.1)
+    flit_view_components (0.0.2)
       view_component (~> 3.0.0rc3)
 
 GEM
