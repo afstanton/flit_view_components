@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    flit_view_components (0.0.2)
+    flit_view_components (0.0.3)
       view_component (~> 3.0.0rc3)
 
 GEM
@@ -254,4 +254,4 @@ RUBY VERSION
    ruby 3.2.1p31
 
 BUNDLED WITH
-   2.4.7
+   2.4.8
