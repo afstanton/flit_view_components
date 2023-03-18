@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "spec_helper"
+require "rails_helper"
 
-RSpec.describe Flit::ThemeComponent, type: :component do
+RSpec.describe Flit::NullTheme do
   pending "add some examples to (or delete) #{__FILE__}"
 
   # it "renders something useful" do

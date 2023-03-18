@@ -2,5 +2,18 @@ require "flit_view_components/version"
 require "flit_view_components/engine"
 
 module FlitViewComponents
-  # Your code goes here...
+  mattr_accessor :configuration
+
+  def self.configure
+    self.configuration ||= Configuration.new
+    yield(configuration)
+  end
+
+  class Configuration
+    attr_accessor :theme
+
+    def initialize
+      @theme = "Flit::DefaultTheme"
+    end
+  end
 end
