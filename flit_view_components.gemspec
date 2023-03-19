@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "view_component", "~> 3.0.0rc5"
+  spec.add_runtime_dependency "dry-schema"
 
   spec.add_development_dependency "rspec-rails"
 end
