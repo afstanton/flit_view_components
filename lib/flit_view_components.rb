@@ -1,10 +1,7 @@
 require "flit_view_components/version"
 require "flit_view_components/engine"
-require "dry/schema"
+require 'json/schema_builder'
 
-Dry::Schema.load_extensions(:json_schema)
-
-require "flit/schemas/theme/types"
 Dir["#{File.dirname(__FILE__)}/flit/**/*.rb"].each { |f| require f }
 
 module FlitViewComponents

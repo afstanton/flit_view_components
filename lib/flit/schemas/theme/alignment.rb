@@ -1,12 +1,31 @@
 module Flit
   module Schemas
     module Theme
-      AlignmentClass = ::Dry::Schema.JSON do
-        required(:x).value(Types::String | Types::Number)
-        required(:y).value(Types::String | Types::Number)
-      end
+      class Alignment
+        include JSON::SchemaBuilder
 
-      Alignment = AlignmentClass | Types::String
+        def schema
+          entity one_of:
+            [
+              { type: :string },
+              object do
+                entity :x,
+                  any_of:[
+                    { type: :string },
+                    { type: :number }
+                  ],
+                  required: true
+                entity :y,
+                  any_of:
+                    [
+                      { type: :string },
+                      { type: :number }
+                    ],
+                  required: true
+              end
+            ]
+        end
+      end
     end
   end
 end
