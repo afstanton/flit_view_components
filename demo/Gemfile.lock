@@ -2,6 +2,8 @@ PATH
   remote: ..
   specs:
     flit_view_components (0.0.6)
+      json-schema
+      multi_json
       view_component (~> 3.0.0rc5)
 
 GEM
@@ -97,6 +99,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json-schema (3.0.0)
+      addressable (>= 2.8)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -123,6 +127,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.0)
+    multi_json (1.15.0)
     net-imap (0.3.4)
       date
       net-protocol
