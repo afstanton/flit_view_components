@@ -1,8 +1,6 @@
 require "rails/engine"
 require "view_component"
 
-Dir["#{File.dirname(__FILE__)}/flit/**/*.rb"].each { |f| require f }
-
 module Flit; end
 
 require_relative "../../app/components/flit/theme"
