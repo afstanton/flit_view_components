@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     flit_view_components (0.0.6)
-      json-schema_builder
+      json-schema
       multi_json
       view_component (~> 3.0.0rc5)
 
@@ -88,9 +88,6 @@ GEM
       concurrent-ruby (~> 1.0)
     json-schema (3.0.0)
       addressable (>= 2.8)
-    json-schema_builder (0.8.2)
-      activesupport (>= 4.0)
-      json-schema (>= 2.1)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)

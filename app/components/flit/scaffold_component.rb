@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
 class Flit::ScaffoldComponent < Flit::BaseComponent
-  def initialize(**kwargs)
-    super
-
-    @app_bar = kwargs[:app_bar]
-    @body = kwargs[:body]
-  end
+  SCHEMA_URL = "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/scaffold.json".freeze
 end

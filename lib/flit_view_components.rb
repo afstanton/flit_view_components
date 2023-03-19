@@ -1,8 +1,6 @@
 require "flit_view_components/version"
 require "flit_view_components/engine"
-require 'json/schema_builder'
-
-Dir["#{File.dirname(__FILE__)}/flit/**/*.rb"].each { |f| require f }
+require 'json-schema'
 
 module FlitViewComponents
   mattr_accessor :configuration
