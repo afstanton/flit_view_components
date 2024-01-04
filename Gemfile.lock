@@ -4,7 +4,7 @@ PATH
     flit_view_components (0.0.6)
       json-schema
       multi_json
-      view_component (~> 3.0.0rc5)
+      view_component (>= 3.0, < 3.10)
 
 GEM
   remote: https://rubygems.org/
@@ -84,7 +84,7 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    i18n (1.12.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     json-schema (3.0.0)
       addressable (>= 2.8)
@@ -99,7 +99,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.18.0)
+    minitest (5.20.0)
     multi_json (1.15.0)
     net-imap (0.3.4)
       date
@@ -112,6 +112,8 @@ GEM
       net-protocol
     nio4r (2.5.8)
     nokogiri (1.14.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     oj (3.14.2)
     public_suffix (5.0.1)
@@ -169,7 +171,7 @@ GEM
     timeout (0.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    view_component (3.0.0.rc5)
+    view_component (3.9.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
@@ -180,6 +182,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   flit_view_components!
