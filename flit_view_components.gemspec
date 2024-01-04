@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "docs/CHANGELOG.md"]
   end
 
-  spec.add_runtime_dependency "view_component", "~> 3.0.0rc5"
+  spec.add_runtime_dependency "view_component", ">= 3.0", "< 3.10"
   spec.add_runtime_dependency "json-schema"
   spec.add_runtime_dependency "multi_json"
 
